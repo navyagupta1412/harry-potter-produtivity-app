@@ -1,0 +1,52 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts Productivity Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <h1 id="greeting">Welcome, wizard!</h1>
+    <img id="houseCrest" alt="House Crest">
+  </header>
+
+  <main class="dashboard-container">
+    <!-- To-Do List -->
+    <section class="card" id="todo-section">
+      <h2>To-Do List</h2>
+      <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Add a task..." required>
+        <button type="submit" class="btn">Add</button>
+      </form>
+      <ul id="todoList"></ul>
+    </section>
+
+    <!-- Pomodoro Timer -->
+    <section class="card" id="pomodoro-section">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer">25:00</div>
+      <div class="timer-buttons">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="resetBtn" class="btn">Reset</button>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section class="card" id="notes-section">
+      <h2>Notes</h2>
+      <textarea id="notesInput" placeholder="Write your thoughts here..."></textarea>
+      <button id="saveNotes" class="btn">Save Notes</button>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <a href="index.html" class="btn">↩ Back to Sorting</a>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
